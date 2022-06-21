@@ -51,7 +51,6 @@ export const getStaticProps = async () => {
 
   client.close();
 
-  console.log(process.env.DEVELOPMENT_ENV_VARIABLE);
   return {
     props: {
       meetups: meetups.map((meetup) => ({
